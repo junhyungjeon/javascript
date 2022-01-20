@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function getSound(animal) {
+      const sounds = {
+        개 : '멍멍이',
+        고양이 : '야옹',
+        참새 : '짹짹',
+        돼지 : '꿀꿀'
+      };
+      return sounds[animal] || '..?';
+    }
+
+    console.log(getSound('개'));
+    console.log(getSound('돼지'));
+    console.log(getSound('인간'));
+  </script>
+</body>
+</html>
